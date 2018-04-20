@@ -1,0 +1,10 @@
+<Project>
+	<PropertyGroup>
+		<AppendTargetFrameworkToOutputPath>False</AppendTargetFrameworkToOutputPath>
+		<RepoRoot>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))</RepoRoot>
+		<BaseOutputPath>$(RepoRoot)Output\</BaseOutputPath>
+		<OutDir>$(BaseOutputPath)$(Configuration)\bin\</OutDir>
+		<BaseIntermediateOutputPath>$(RepoRoot)Output\$(Configuration)\obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+		<IntermediateOutputPath>$(BaseIntermediateOutputPath)</IntermediateOutputPath>
+	</PropertyGroup>
+</Project>
